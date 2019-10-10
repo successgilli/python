@@ -1,0 +1,5 @@
+age = int(input('input your age: '))
+#print('who cares') if age < 10 else print ('you are young starnge one')
+if age == 10: print(f'age is {age}')
+elif age > 10: print('age is greater than 10')
+else: print('age is less than 10')
