@@ -1,0 +1,15 @@
+Pug
+>line
+Jack Russell Terrier
+>line
+English Springer Spaniel
+>line
+German Shepherd
+>line
+Staffordshire Bull Terrier
+>line
+Cavalier King Charles Spaniel
+Golden Retriever
+West Highland White Terrier
+Boxer
+Border Terrier

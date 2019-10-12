@@ -21,7 +21,7 @@
 # p2 = meth2('ben', 59)
 
 # print(p2.get_name())
-
+print(__name__, ' dunder')
 class Parent:
     def __init__(self, name = 'dafaultName', age = 'none supplied'):
         self.name = name
@@ -30,15 +30,18 @@ class Parent:
     def get_info(self):
         print(f'my name is {self.name} with age {self.age}')
 
-p1 = Parent('Gilbert', 4090)
-print(p1.name)
-print(p1.get_info())
+if __name__ == '__main__':
+    p1 = Parent('Gilbert', 4090)
+    print(p1.name)
+    print(p1.get_info())
 
 class Child(Parent):
+    fat = True
     def __init__(self, name = 'none supplied', age = 'second noe availabele', birth_day = 'none supplied'):
         super().__init__(name, age)
         self.birth_day = birth_day
     def get_info(self):
         print('nothing for you')
-p2 = Child('Angel', birth_day = '2nd of june')
-print(p2.birth_day)
+if __name__ == '__main__':
+    p2 = Child('Angel', birth_day = '2nd of june')
+    print(p2.fat)
