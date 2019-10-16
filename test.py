@@ -72,3 +72,44 @@ with open('text.txt') as reader:
     read = reader.readlines()
     # reader.seek(0)
 print(list(filter(lambda line: '>' not in line, read)))
+# def progress_days(runs):
+# 	li = []
+# 	for index in range(len(runs)):
+# 		if runs[index + 1]:
+# 			if runs[index + 1] > runs[index]: print('yes')
+# progress_days([1,4,2,5])
+def progress_days(runs):
+	li = []
+	for index in range(len(runs) -1, 0, -1):
+		if runs[index] > runs[index - 1]:
+			li.append(runs[index])
+	print(len(li))
+progress_days([1,2,42,43,4])
+def cast_out_nines(a, b, r):
+	digital_roots = []
+	def cacl_dr(given):
+		dr1 = given
+		while dr1 >= 10:
+			print('yes')
+			if dr1 < 10: break
+			dr1 = sum([int(val) for val in list(str(dr1))])
+			print(dr1)
+		print(dr1, ' dr1')
+		digital_roots.append(dr1)
+	for given in [a, b, r]:
+		cacl_dr(given)
+	cacl_dr(a*b)
+	print(digital_roots)
+	return 'correct!' if digital_roots[2] == digital_roots[3] else 'wrong'
+
+			
+		
+print(cast_out_nines(9, 9, 81))
+	
+li = [
+	[1,2,43],
+	[2,4,5]
+]
+x = 3 + \
+	4
+print(5//2)
